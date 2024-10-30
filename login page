@@ -1,0 +1,50 @@
+<style>
+.image-gallery {
+  border-radius: 30px;
+}
+.gallery-container {
+  display: flex;
+  gap: 20px;
+}
+.gallery-column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 33%;
+}
+.gallery-image {
+  aspect-ratio: 0.46;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  border-radius: 30px;
+  flex-grow: 1;
+}
+@media (max-width: 991px) {
+  .gallery-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+  .gallery-column {
+    width: 100%;
+  }
+  .gallery-image {
+    margin-top: 40px;
+  }
+}
+</style>
+
+<section class="image-gallery">
+  <div class="gallery-container">
+    <div class="gallery-column">
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/52a4f8a619a5a132412ab16235a4540ea8997bbae15db10cd19b02d604ad316f?placeholderIfAbsent=true&apiKey=ec9b3c3dc95d4e7cbc4a3d853a23450a" class="gallery-image" alt="Gallery image 1" />
+    </div>
+    <div class="gallery-column">
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/fcf5262c6595f390971645022550126a63a8f2aa0da262d1c40a67577c869f9f?placeholderIfAbsent=true&apiKey=ec9b3c3dc95d4e7cbc4a3d853a23450a" class="gallery-image" alt="Gallery image 2" />
+    </div>
+    <div class="gallery-column">
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/0ebc8c43749add9d96ff07aa90b04a368d835348b717ae29b23444883af7e02a?placeholderIfAbsent=true&apiKey=ec9b3c3dc95d4e7cbc4a3d853a23450a" class="gallery-image" alt="Gallery image 3" />
+    </div>
+  </div>
+</section>
